@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "graphql-codegen && next dev -p 8080",
+    "dev": "graphql-codegen || echo 'Codegen failed, continuing anyway...' && next dev -p 8080",
     "build": "graphql-codegen && next build",
     "start": "graphql-codegen && next start",
     "lint": "next lint",
